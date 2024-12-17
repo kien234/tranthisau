@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Phát Bài Nghe Tiếng Đức</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Trang Phát Bài Nghe Tiếng Đức</h1>
+        </header>
+
+        <div class="player-container">
+            <audio id="audio-player" controls>
+                <source id="audio-source" src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="playlist">
+                <h2>Danh Sách Phát</h2>
+                <ul id="playlist">
+                    <!-- Các bài nghe sẽ được thêm vào đây -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="manage-playlist">
+            <h2>Quản Lý Danh Sách Phát</h2>
+            <form id="add-song-form">
+                <label for="song-urls">Đường dẫn bài nghe (mỗi đường dẫn một dòng):</label>
+                <textarea id="song-urls" rows="5" placeholder="Nhập các URL bài nghe, mỗi URL một dòng"></textarea>
+                <button type="submit">Thêm Bài Nghe</button>
+            </form>
+        </div>
+        
+
+    <script src="scripts.js"></script>
+</body>
+</html>
